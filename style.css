@@ -1,0 +1,704 @@
+@keyframes changecolor {
+    from {
+        background-color: blueviolet;
+    }
+
+    50% {
+        background-color: bisque;
+    }
+
+    75% {
+        width: 300px;
+        background-color: brown;
+    }
+
+    to {
+        background-color: yellow;
+    }
+}
+
+@media screen {
+    #para21 {
+        font-size: 20px;
+    }
+
+}
+
+@media print {
+    #para21 {
+        font-size: 40px;
+    }
+
+    #img21 {
+        display: none;
+
+    }
+
+    #div {
+        width: 60%;
+    }
+
+}
+
+body {
+    border: 2px dashed black;
+}
+
+
+h1 {
+    background-color: black;
+    color: whitesmoke;
+}
+
+
+#para1 {
+    background-color: red;
+    font-size: medium;
+}
+
+.green-text {
+    background-color: darkcyan;
+    font-size: smaller;
+}
+
+/* Single line comments */
+
+/* multi-line
+  comments */
+
+
+#bg {
+    background-color: pink;
+    background-image: url("img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1100px 500px;
+    background-size: cover;
+    background-attachment: fixed;
+
+    /*background: red url("Image.jpg") no-repeat fixed center ;*/
+
+}
+
+#border {
+    background-color: red;
+
+    border-style: solid;
+    border-style: solid dashed;
+    border-style: solid dashed none dotted;
+
+    border-width: 4px;
+    border-width: 3px 6px;
+    border-width: 3px 4px 5px 6px;
+
+    border-color: blue;
+    border-color: blue yellow;
+    border-color: blue pink indigo brown;
+
+    /*border: 4px solid blue; */
+
+    border-top-style: dotted;
+    border-top-width: 6px;
+    border-top-color: blue;
+
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    border-radius: 10px;
+    border-radius: 10px 20px;
+    border-radius: 10px 20px 30px 40px;
+
+}
+
+#heiwei {
+    background-color: pink;
+    height: 450px;
+    width: 70%;
+
+    max-width: 300px;
+    max-height: 350px;
+    min-width: 200px;
+    min-height: 200px;
+}
+
+#padding {
+    border: 3px solid red;
+
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 20%;
+    padding-right: 100px;
+
+    padding: 20px;
+    padding: 10px 120px;
+}
+
+.cls1 {
+    border: 2px solid blue;
+    padding: 20px 25px 30px 35px;
+}
+
+#margin {
+
+    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    margin-right: 30px;
+
+    margin: 20px 30px -35px 40px;
+
+    width: 800px;
+    margin: 20px auto;
+}
+
+#text {
+    color: red;
+    border: 2px solid darkslategrey;
+
+    text-align: left;
+
+    direction: ltr;
+
+    text-decoration: none;
+
+    text-transform: capitalize;
+
+    line-height: 30px;
+
+    text-indent: 50px;
+
+    letter-spacing: 3px;
+
+    word-spacing: 10px;
+
+    white-space: pre;
+
+    word-wrap: break-word;
+
+}
+
+#shadow {
+    font-size: 70px;
+    text-shadow: 2px 30px 4px brown;
+
+    width: 500px;
+
+    border: 2px solid greenyellow;
+
+    writing-mode: vertical-lr;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: yellowgreen;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: red;
+}
+
+h2 {
+    font-weight: 200;
+}
+
+#para2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+}
+
+#parentunit {
+    border: 1px solid red;
+    width: 20cm;
+    width: 100mm;
+    width: 10in;
+
+    height: 30vh;
+    width: 50vw;
+}
+
+#childunit {
+    border: 1px solid blue;
+    width: 50%;
+}
+
+#cursor {
+    border: 1px solid red;
+    cursor: all-scroll;
+    cursor: wait;
+    cursor: progress;
+}
+
+#boxshd {
+    border: 1px solid green;
+    width: 500px;
+    background-color: pink;
+    margin: 80px;
+    padding: 20px;
+    box-shadow: 10px 20px green;
+    box-shadow: 10px 20px 15px 15px brown;
+    box-shadow: 10px 10px 15px 3px red, -10px 10px 15px 3px black;
+
+}
+
+#color-box {
+    background-color: green;
+    height: 200px;
+    width: 500px;
+    margin-bottom: 10px;
+    opacity: 0.5;
+}
+
+#opaimg:hover {
+    opacity: 0.9;
+}
+
+#red-box {
+    height: 300px;
+    background-color: red;
+    margin-top: -100px;
+    opacity: 0.6;
+}
+
+#imgfil {
+    filter: brightness(80%);
+    filter: contrast(70%);
+    filter: grayscale(60%);
+}
+
+#sprite {
+    height: 128px;
+    background-image: url(brother.webp);
+    background-repeat: no-repeat;
+    background-position: 0px-140px;
+}
+
+#grad {
+    height: 500px;
+    border: 1px solid grey;
+    background-image: linear-gradient(green, blue);
+
+    background-image: linear-gradient(to bottom right, green, blue, yellow);
+
+    background-image: radial-gradient(green, yellow, red);
+
+    background-image: radial-gradient(green, pink, grey);
+
+}
+
+#overflow {
+    background-color: whitesmoke;
+    border: 1px solid red;
+    width: 600px;
+    height: 100px;
+    resize: vertical;
+    overflow: visible;
+
+    resize: horizontal;
+    overflow: hidden;
+
+    resize: both;
+    overflow: scroll;
+
+    overflow: auto;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+textarea {
+    resize: both;
+}
+
+ul {
+    list-style-type: disc;
+
+    list-style-type: circle;
+
+    list-style-type: square;
+
+}
+
+ol {
+    list-style-position: inside;
+    list-style-type: upper-alpha;
+
+    list-style-type: lower-roman;
+
+    list-style-type: decimal-leading-zero;
+
+    list-style-type: decimal;
+}
+
+table {
+    border-collapse: separate;
+    border: 1px solid red;
+    border-spacing: 15px 20px;
+}
+
+caption {
+    border: 1px solid red;
+    caption-side: bottom;
+}
+
+tr {
+    border: 1px solid red;
+}
+
+th {
+    border: 1px solid red;
+    padding: 5px;
+    height: 20px;
+}
+
+td {
+    border: 1px solid red;
+    height: 15px;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table {
+    empty-cells: hide;
+    width: 300px;
+    table-layout: fixed;
+}
+
+#fun {
+    background-color: teal;
+    height: 200px;
+    width: calc(100% -100px);
+}
+
+a {
+    padding: 5px 30px;
+    margin: 50px 30px 40px 60px;
+    color: white;
+    text-decoration: none;
+}
+
+#div1 {
+    background-color: blueviolet;
+    width: 600px;
+    height: 150px;
+}
+
+#div2 {
+    background-color: yellow;
+    height: 150px;
+    padding: 50px;
+    margin: 0px;
+    border: 10px solid red;
+    box-sizing: content-box;
+}
+
+#green {
+    color: green;
+}
+
+#blue {
+    color: red;
+}
+
+#Initial {
+    color: initial;
+}
+
+#Inherit {
+    color: inherit;
+}
+
+img {
+    border: 2px solid skyblue;
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top left;
+}
+
+li:first-child {
+    color: red;
+}
+
+li:last-child {
+    color: pink;
+}
+
+li:nth-child(3) {
+    color: yellowgreen;
+}
+
+li:nth-last-child(3n+1) {
+    color: blue;
+}
+
+input:focus {
+    border: 20px solid yellowgreen;
+}
+
+a:hover {
+    color: green;
+}
+
+#PE::first-letter {
+    color: red;
+    font-size: larger;
+}
+
+#PE::first-line {
+    color: green;
+    font-size: 15px;
+}
+
+h5::before {
+    content: url(img.jpg);
+}
+
+h5::after {
+    content: added after;
+}
+
+::selection {
+    color: red;
+    background-color: yellow;
+}
+
+#display {
+    border: 1px solid red;
+    width: 50%;
+    height: 100px;
+    display: inline;
+}
+
+#div6 {
+    display: none;
+    visibility: hidden;
+}
+
+#parent1 {
+    border: 1px solid yellowgreen;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+}
+
+#one1 {
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+#two2 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#three3 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    display: inline-block;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* LAYERS AND Z-INDEX */
+
+#parent1 {
+    padding: 20px;
+    width: 50%;
+    position: relative;
+}
+
+#one1 {
+    position: relative;
+    z-index: 3;
+}
+
+#two2 {
+    position: relative;
+    top: 50px;
+    left: -50px;
+    z-index: 2;
+}
+
+#three3 {
+    position: relative;
+    top: 100px;
+    left: -100px;
+    z-index: 1;
+}
+
+#img10 {
+    padding: 2px;
+    margin-top: 40px;
+    width: 100px;
+    height: auto;
+    float: left;
+}
+
+#img11 {
+    width: 100px;
+    height: auto;
+    padding: 2px;
+    float: right;
+}
+
+#para10 {
+    margin-top: 50px;
+}
+
+#section307 {
+    border: 1px solid green;
+    background-color: gold;
+    list-style-type: none;
+    overflow: auto;
+}
+
+li {
+    border: 1px solid brown;
+    color: white;
+    padding: 10px 15px;
+    float: left;
+}
+
+#para12 {
+    border: 1px solid greenyellow;
+    overflow: auto;
+}
+
+#img12 {
+    float: left;
+    width: 100px;
+    height: auto;
+}
+
+#img13 {
+    float: right;
+    width: 100px;
+    height: auto;
+    clear: left;
+}
+
+#content {
+    width: 70%;
+    background-color: green;
+    height: 200px;
+    float: left;
+}
+
+#sidebar {
+    width: 30%;
+    background-color: blue;
+    height: 200px;
+    float: left;
+}
+
+#footer {
+    background-color: yellowgreen;
+    clear: both;
+}
+
+#wrapper {
+    padding: 20px;
+    margin: 20px;
+
+}
+
+#ankr {
+    text-decoration: none;
+    background-color: lightgreen;
+    padding: 10px 20px;
+    color: white;
+    transform: translate(50px, 50px);
+    display: inline-block;
+
+}
+
+#ankr:hover {
+    display: inline-block;
+    transform: rotate(20deg);
+    transform-origin: 0% 100%;
+}
+
+#cover1 {
+    border: 2px solid rebeccapurple;
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+}
+
+#content1 {
+    height: 200px;
+    width: 200px;
+    background-color: yellowgreen;
+    transform: perspective(300px);
+    transform: rotate3d(50, 0, 50, 30deg);
+}
+
+#div20 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    margin: 100px;
+    transition-delay: 50ms;
+
+    transition-timing-function: ease-in-out;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+#div20:hover {
+    width: 200px;
+    background-color: green;
+}
+
+#animate {
+    margin-left: 20px;
+    animation-name: changecolor;
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    animation-duration: 2s;
+    animation-iteration-count: 3;
+}
+
+#animate2 {
+    margin-left: 20px;
+    animation-name: changecolor;
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-timing-function: linear;
+}
+
+#imgres {
+    width: 100%;
+    height: auto;
+}
